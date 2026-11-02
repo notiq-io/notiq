@@ -1,0 +1,32 @@
+name: Spike
+description: Time-boxed research to answer a question
+title: "[Spike] "
+labels: ["spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What needs answering
+    validations:
+      required: true
+  - type: input
+    id: time_box
+    attributes:
+      label: Time box
+      placeholder: 1 h
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options to compare
+      value: |
+        -
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What gets decided, and where it is recorded (usually an ADR in docs/decisions)
+    validations:
+      required: true

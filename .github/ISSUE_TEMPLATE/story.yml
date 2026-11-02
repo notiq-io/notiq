@@ -1,0 +1,39 @@
+name: Story
+description: A piece of user-facing functionality
+title: "[Story] "
+body:
+  - type: input
+    id: as_a
+    attributes:
+      label: As a
+      placeholder: an application sending notifications
+    validations:
+      required: true
+  - type: input
+    id: i_want
+    attributes:
+      label: I want
+      placeholder: to send a message with one API call
+    validations:
+      required: true
+  - type: input
+    id: so_that
+    attributes:
+      label: So that
+      placeholder: I don't have to integrate every channel myself
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this to be done
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Links to specs, ADRs, open questions

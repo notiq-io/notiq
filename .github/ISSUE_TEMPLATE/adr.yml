@@ -1,0 +1,28 @@
+name: Decision (ADR)
+description: A decision to record in docs/decisions
+title: "[ADR] "
+labels: ["adr"]
+body:
+  - type: input
+    id: decision
+    attributes:
+      label: Decision to make
+      placeholder: Choose the database
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: The problem and the forces at play
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Considered options
+      value: |
+        -
+  - type: markdown
+    attributes:
+      value: The ADR itself is a file in `docs/decisions/` named like `0004-choose-database.md` (MADR format). Its PR closes this issue.

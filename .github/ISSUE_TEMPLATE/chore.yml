@@ -1,0 +1,19 @@
+name: Chore
+description: Setup, tooling, cleanup
+title: "[Chore] "
+labels: ["chore"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+    validations:
+      required: true
+  - type: textarea
+    id: done_when
+    attributes:
+      label: Done when
+      value: |
+        - [ ]
+    validations:
+      required: true
